@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Set the source and destination directories
+src="./"
+dest="../"
+
+# Use rsync to copy the HTML files
+rsync -au --include='*.html' --exclude='*' "$src" "$dest"
